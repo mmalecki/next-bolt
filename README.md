@@ -8,9 +8,6 @@ to respectively, countersink or add clearance.
 This allows you to keep your bolt lengths real-life-sized, without driving the
 design from the bolt size.
 
-The examples use [`catchnhole`](https://github.com/mmalecki/catchnhole/) for convenience, but this library is absolutely
-agnostic about how you choose to (or not to!) render your bolts. You do you.
-
 Anyway, check this out:
 
 ```
@@ -26,6 +23,18 @@ echo(next_bolt("M3", 36.5));
 So for the aforementioned bolt and length, our choices are to either use a M3x40
 bolt, and add 3.5 mm of bolt-sized clearance past the thing we're trying to reach
 with our bolt, or use a M3x35 bolt and countersink it by 1.5 mm.
+
+[`examples/simple.scad`](./examples/simple.scad) demonstrates a this conundrum, with a nutcatch thrown in:
+
+| Previous | Next |
+:---------:|:----:|
+![Previous bolt](./examples/previous.png) | ![Next bolt](./examples/next.png)
+
+
+(The examples use [`catchnhole`](https://github.com/mmalecki/catchnhole/) for convenience, but this library is absolutely
+agnostic about how you choose to (or not to!) render your bolts. You do you.)
+
+
 
 ## Installation
 Add a git submodule to your project:
