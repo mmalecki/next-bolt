@@ -1,0 +1,3 @@
+[submodule "lookup-kv"]
+	path = lookup-kv
+	url = https://github.com/mmalecki/openscad-lookup-kv
